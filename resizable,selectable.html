@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Selectable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+ 
+  <style>
+
+    #resizable { width: 150px; height: 150px; padding: 0.5em; }
+    #resizable h3 { text-align: center; margin: 0; }
+  #feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background:rgb(140, 101, 142) }
+  #selectable .ui-selected { background:rgb(140, 101, 142); color: rgb(140, 101, 142); }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    
+        $( "#resizable" ).resizable();
+    $( "#selectable" ).selectable();
+  } );
+  </script>
+</head>
+<body>
+    <div id="resizable" class="ui-widget-content">
+ 
+<ol id="selectable">
+    <h3 class="ui-widget-header">
+  <li class="ui-widget-content">appple</li>
+  <li class="ui-widget-content">banana</li>
+  <li class="ui-widget-content">mango</li>
+
+
+</ol>
+</div>
+</h3>
+ 
+ 
+</body>
+</html>
